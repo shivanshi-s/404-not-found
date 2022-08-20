@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Lora:wght@600&family=Source+Sans+Pro&family=Space+Mono:wght@400;700&display=swap');
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+body {
+   font-family: 'Space Mono', sans-serif;
+}
+nav {
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+   margin: 1rem;
+}
+.container {
+   max-width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   gap: 1rem;
+   flex-wrap: wrap;
+   margin-bottom: 40px;
+   margin-right: 20px;
+   margin-left: 20px;
+}
+
+.item {
+   flex: 1 1 40%;
+   flex-basis: 40%;
+}
+.left-side img {
+   width: 80%;
+   height: 80%;
+   margin: 2rem 1rem 1rem 2rem;
+}
+.right-side  h2{
+   font-size: 64px;
+    font-weight: bold;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+}
+.right-side p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    margin-bottom: 10px;
+}
+.btn {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: -0.035em;
+    background: #333333;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 2px;
+}
+footer a{
+   text-decoration: none;
+   color:#ccccff;
+}
+footer h4{
+   text-align: center;
+   color: #ccccff;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width:850px){
+   .container{
+      margin-right:20px;
+      margin-left: 25px;
+  }
+
+  .right-side h2{
+   font-size: 50px;
+   line-height: 71px;
+ }
+ .right-side p {
+   font-size: 20px;
+ }
+   .item{
+        flex: 1 1 100%;
+    }
+}
+@media screen and (max-width:550px){
+   .container{
+      margin-right:10px;
+      margin-left: 10px;
+  }
+
+  .right-side h2{
+   font-size: 38px;
+   line-height: 51px;
+ }
+    .item{
+        flex: 1 1 100%;
+    }
+}
